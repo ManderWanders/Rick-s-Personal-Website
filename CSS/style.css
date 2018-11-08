@@ -1,0 +1,84 @@
+/* This document contains the basic style for the website.
+
+NOTES
+
+Colors:
+Teal #00B497
+Mint #B7EDA3
+Highlighter #E2E729
+Red #B12028
+Black #101820
+*/
+
+.topnav {
+    background-color: #fff;
+    color: #101820;
+    overflow: hidden;
+    font: 1em "raleway";
+}
+
+.topnav a {
+    float: left;
+    color: #101820;
+    text-align: center;
+    padding: 8px 8px;
+    font: 1em "raleway";
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #B7EDA3;
+    font: 1em "raleway" #101820;
+}
+
+.topnav a.active {
+    background-color: #00B497;
+    font: 1em "raleway" #101820;
+}
+
+.body {
+  background-color: #fff;
+}
+
+.h1 {
+  color: #00B497;
+  font: 2em "permanent marker";
+}
+
+.h1 a:hover{
+  color: #B7EDA3;
+  font: 2em "permanent marker";
+}
+
+.h2 {
+  color: #00B497;
+  font: 1.5em "permanent marker";
+}
+
+.h3 {
+  color: #00B497;
+  font: 1.25em "permanent marker";
+}
+
+.h4 {
+  color: #00B497;
+  font: 1em "permanent marker";
+}
+
+.h5 {
+  color: #00B497;
+  font: 3em "permanent marker";
+}
+
+.h6 {
+  color: #00B497;
+  font: .5em "permanent marker";
+}
+
+.p {
+  font: 1em "raleway" #101820;
+}
+
+.bottomnav{
+  background-color: #fff;
+}
