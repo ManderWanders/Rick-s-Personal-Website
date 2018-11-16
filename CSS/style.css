@@ -180,7 +180,7 @@ header::before {
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: table;
+  display: flex flex direction column;
   clear: both;
 }
 
