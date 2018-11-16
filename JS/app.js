@@ -9,10 +9,3 @@ while ( counter < 1 ) {
   document.write( 'Ranked # ' + randNum + ' of a lot in Red Dead Redemption 2.' );
   counter += 1;
 }
-
-dvar retText = rankedText[nextVal][0];
-
-nextVal += 1;
-writeCookie("ranking", nextVal.toString(), 33);
-
-return retText;

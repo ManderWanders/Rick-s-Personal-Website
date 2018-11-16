@@ -33,12 +33,7 @@ header {
 }
 
 body {
-  background-image: url("./img/Rick.jpg");
-  background-repeat: no-repeat;
   position: center top;
-  font-family: 'montserrat';
-  font-size: 1em;
-  color: #fff;
   line-height: 1.6;
   background-color: #101820;
   display: flex;
@@ -91,7 +86,7 @@ h1 {
 }
 
 h2 {
-  font: 2em "permanent marker" #00B497;
+  font: 2em "permanent marker";
   display: block;
   margin-block-start: 0.75em;
   margin-block-end: 0em;
@@ -118,13 +113,14 @@ header::before {
 
 /* IDs */
 
-#header-image {
+#Rick {
   box-sizing: inherit;
   align: center;
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: auto;
   margin: 0;
 }
+
 
 /* Navigation */
 
@@ -161,6 +157,24 @@ header::before {
 
 .footer {
   font: "montserrat" .25em #fff;
+}
+
+/* Miscellaneous */
+
+.rick {
+  font: 1em "permanent marker" #E2E729;
+}
+
+.text1 {
+  color: #B7EDA3;
+}
+
+.text2 {
+  color: #B12028;
+}
+
+.text3 {
+  color: #E2E729;
 }
 
 /* Clear floats after the columns */
