@@ -1,84 +1,212 @@
-/* This document contains the basic style for the website.
-
-NOTES
+/* This document contains the style for Rick's Personal website.
 
 Colors:
 Teal #00B497
-Mint #B7EDA3
-Highlighter #E2E729
+Mint: #B7EDA3
+Highlighter: #E2E729
 Red #B12028
 Black #101820
 */
 
-.topnav {
-    background-color: #fff;
-    color: #101820;
-    overflow: hidden;
-    font: 1em "raleway";
+/* Imported fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+/* Base Element Styles */
+
+html {
+  box-sizing: border-box;
 }
 
-.topnav a {
-    float: left;
-    color: #101820;
-    text-align: center;
-    padding: 8px 8px;
-    font: 1em "raleway";
-    text-decoration: none;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.topnav a:hover {
-    background-color: #B7EDA3;
-    font: 1em "raleway" #101820;
+header {
+  font-family: 'permanent marker';
+  font-size: 2em;
+  color: #E2E729;
+  float: left;
+  margin-bottom: 5px;
+  padding: .25em 0em;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
 }
 
-.topnav a.active {
-    background-color: #00B497;
-    font: 1em "raleway" #101820;
+body {
+  font-family: 'montserrat';
+  font-size: 1em;
+  color: #fff;
+  line-height: 1.6;
+  background-color: #101820;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.body {
-  background-color: #fff;
+main {
+  background-color: none;
+  padding: 1px 20px 20px 20px;
 }
 
-.h1 {
+footer {
+  font: "montserrat" .5em #fff;
+  text-align: right;
+  line-height: 1.6;
+  padding: 2em;
+  background-color: #00B497;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  font: "montserrat" 1em #fff;
+}
+
+a {
+  color: #E2E729;
+}
+
+a:hover {
   color: #00B497;
-  font: 2em "permanent marker";
+  opacity: 0.5;
 }
 
-.h1 a:hover{
-  color: #B7EDA3;
-  font: 2em "permanent marker";
+a:visited {
+  color: #E2E729;
+  text-decoration: none;
 }
 
-.h2 {
-  color: #00B497;
-  font: 1.5em "permanent marker";
+h1 {
+  font: 1em "permanent marker" #E2E729;
 }
 
-.h3 {
-  color: #00B497;
-  font: 1.25em "permanent marker";
-}
-
-.h4 {
-  color: #00B497;
-  font: 1em "permanent marker";
-}
-
-.h5 {
-  color: #00B497;
-  font: 3em "permanent marker";
-}
-
-.h6 {
+h2 {
   color: #00B497;
   font: .5em "permanent marker";
 }
 
-.p {
-  font: 1em "raleway" #101820;
+/* IDs */
+
+#social
+
+
+/* Classes */
+
+/* Navigation */
+
+.topnav {
+  overflow: hidden;
+  flex: wrap;
+  justify-content: space-around;
+  padding: 1em;
 }
 
-.bottomnav{
-  background-color: #fff;
+.topnav a {
+  float: right;
+  padding: .67em 8px;
+  border-radius: 12px;
+}
+
+/* Structural */
+
+.container {
+  display: block;
+  text-align: "center";
+  width: "inherit";
+  padding-left: 1em;
+  padding-right: 1em;
+  flex-wrap: wrap;
+}
+
+.clearfix
+
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries */
+
+/* Desktop */
+
+@media all and (min-width: 1030px) {
+
+  .header{
+    flex-direction: row;
+  }
+
+  .wrap {
+    min-height: calc(100vh - 89px);
+  }
+
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* Tablet */
+
+@media all and (max-width: 769px){
+
+  .wrap {
+    min-height: calc(100vh - 89px);
+  }
+
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* Cell Phone*/
+@media screen and (max-width: 479px) {
+
+  body {
+    font-size: 2em;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .wrap {
+    min-height: calc(100vh - 89px);
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    padding-left: none;
+    padding-right: none;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
