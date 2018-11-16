@@ -180,8 +180,12 @@ header::before {
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: flex flex direction column;
+  display: block;
   clear: both;
+}
+
+.column-container {
+  display: flex flex direction column;
 }
 
 /* Media Queries */
