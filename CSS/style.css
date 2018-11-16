@@ -184,10 +184,6 @@ header::before {
   clear: both;
 }
 
-.column-container {
-  display: flex flex direction column;
-}
-
 /* Media Queries */
 
 /* Desktop */
@@ -205,6 +201,11 @@ header::before {
   .container {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .column-container {
+     display: flex;
+     flex-direction: column;
   }
 
   .clearfix::after {
