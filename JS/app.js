@@ -1,3 +1,5 @@
+// Function generates random number for "Ranked" document.write, showing Rick's place in the game "Red Dead Redemption 2".
+
 function randomNumber(upper) {
   return Math.floor( Math.random() * upper ) + 1;
 }
