@@ -24,18 +24,18 @@ html {
 }
 
 header {
-  font-family: 'permanent marker';
-  font-size: 2em;
-  color: #E2E729;
-  float: left;
-  margin-bottom: 5px;
-  padding: .25em 0em;
+  float: right;
+  margin-bottom: 0px;
+  padding: 0em;
   justify-content: space-between;
   display: flex;
   flex-direction: row;
 }
 
 body {
+  background-image: url("./img/Rick.jpg");
+  background-repeat: no-repeat;
+  position: center top;
   font-family: 'montserrat';
   font-size: 1em;
   color: #fff;
@@ -48,10 +48,11 @@ body {
 main {
   background-color: none;
   padding: 1px 20px 20px 20px;
+  max-width: inherit;
 }
 
 footer {
-  font: "montserrat" .5em #fff;
+  font: "montserrat" 2px #fff;
   text-align: right;
   line-height: 1.6;
   padding: 2em;
@@ -67,6 +68,7 @@ p {
 
 a {
   color: #E2E729;
+  text-decoration: none;
 }
 
 a:hover {
@@ -76,37 +78,67 @@ a:hover {
 
 a:visited {
   color: #E2E729;
-  text-decoration: none;
 }
 
 h1 {
-  font: 1em "permanent marker" #E2E729;
+  font: 3em "permanent marker" #E2E729;
+  display: block;
+  margin-block-start: 0.75em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 h2 {
-  color: #00B497;
-  font: .5em "permanent marker";
+  font: 2em "permanent marker" #00B497;
+  display: block;
+  margin-block-start: 0.75em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+/* Selectors */
+
+img[src$=".png"] {
+  width: 30px;
+  height: 30px;
+}
+
+/* Pseudo-Elements */
+
+header::before {
+  content: url("./img/Rick.jpg");
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 /* IDs */
 
-#social
-
-
-/* Classes */
+#header-image {
+  box-sizing: inherit;
+  align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 
 /* Navigation */
 
 .topnav {
   overflow: hidden;
-  flex: wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 1em;
+  padding: .5em .5em 0em .5em;
+  width: relative;
 }
 
 .topnav a {
   float: right;
-  padding: .67em 8px;
+  padding: 0em 8px;
   border-radius: 12px;
 }
 
@@ -116,17 +148,19 @@ h2 {
   display: block;
   text-align: "center";
   width: "inherit";
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
   flex-wrap: wrap;
 }
-
-.clearfix
-
 
 .column {
   float: left;
   width: 33.33%;
+}
+
+.footer {
+  font: "montserrat" .25em #fff;
 }
 
 /* Clear floats after the columns */
@@ -183,11 +217,7 @@ h2 {
 }
 
 /* Cell Phone*/
-@media screen and (max-width: 479px) {
-
-  body {
-    font-size: 2em;
-  }
+@media screen and (max-width: 300px) {
 
   .column {
     width: 100%;
